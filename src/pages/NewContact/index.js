@@ -1,22 +1,12 @@
+import ContactForm from '../../components/ContactForm';
 import PageHeader from '../../components/PageHeader';
-import Input from '../../components/Input';
-import Select from '../../components/Select';
 
 export default function NewContact() {
   return (
     <>
-      <PageHeader
-        title="Novo Contato"
-      />
-      <Input placeholder="Nome" />
-      <Select>
-        <option value="123">Instagram</option>
-        <option value="123">Instagram</option>
-        <option value="123">Instagram</option>
-        <option value="123">Facebook</option>
-        <option value="123">Instagram</option>
-      </Select>
-    </>
+      <PageHeader title="Novo Contato" />
 
+      <ContactForm buttonLabel="Cadastrar" />
+    </>
   );
 }
